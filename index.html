@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="dist/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-full">
+    <div class="bg-white shadow-lg max-w-lg md:flex mx-auto mt-4 p-6 rounded">
+        <!-- Image -->
+        <img class="flex-1 w-full h-40 md:h-full object-cover rounded-l" 
+             src="https://picsum.photos/id/1047/200/300" 
+             alt="Image de connexion">
+        
+        <!-- Formulaire -->
+        <div class="p-4 flex-1 md:flex md:flex-col justify-center items-center">
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">Connexion</h1>
+            
+            <!-- Champ Nom d'utilisateur -->
+            <div class="mb-4">
+                <label for="username" class="block text-gray-600 mb-2">Nom d'utilisateur</label>
+                <input type="text" 
+                       id="username" 
+                       name="username" 
+                       class="border shadow-inner py-2 px-3 text-gray-700 w-full focus:shadow-outline" 
+                       placeholder="Entrez votre nom d'utilisateur">
+            </div>
+
+            <!-- Champ Mot de passe -->
+            <div class="mb-4">
+                <label for="password" class="block text-gray-600 mb-2">Mot de passe</label>
+                <input type="password" 
+                       id="password" 
+                       name="password" 
+                       class="border shadow-inner py-2 px-3 text-gray-700 w-full focus:shadow-outline" 
+                       placeholder="Entrez votre mot de passe">
+            </div>
+
+            <!-- Bouton de connexion -->
+            <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">
+                Se connecter
+            </button>
+        </div>
+    </div>
+</body>
+</html>
